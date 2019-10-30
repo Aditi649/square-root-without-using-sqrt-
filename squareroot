@@ -4,16 +4,14 @@ int main()
 {
     int n;
 
-    float temp, sqrt;
+    float temp=0, sqrt;
 
     printf("Enter n: \n");
 
     scanf("%d", &n);
 
     sqrt = n / 2;
-    temp = 0;
-
-  
+   
     while(sqrt != temp){
        
         temp = sqrt;
@@ -21,6 +19,6 @@ int main()
         sqrt = ( n/temp + temp) / 2;
     }
 
-    printf("The square root of '%d' is '%f'", n, sqrt);
+    printf("The square root of '%d' is '%.3f'", n, sqrt);
     return 0;
 }
