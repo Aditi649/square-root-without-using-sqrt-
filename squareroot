@@ -2,15 +2,15 @@
 
 int main()
 {
-    int number;
+    int n;
 
     float temp, sqrt;
 
-    printf("Provide the number: \n");
+    printf("Enter n: \n");
 
-    scanf("%d", &number);
+    scanf("%d", &n);
 
-    sqrt = number / 2;
+    sqrt = n / 2;
     temp = 0;
 
   
@@ -18,9 +18,9 @@ int main()
        
         temp = sqrt;
 
-        sqrt = ( number/temp + temp) / 2;
+        sqrt = ( n/temp + temp) / 2;
     }
 
-    printf("The square root of '%d' is '%f'", number, sqrt);
+    printf("The square root of '%d' is '%f'", n, sqrt);
     return 0;
 }
